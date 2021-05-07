@@ -1,0 +1,14 @@
+.products{
+	display: flex;
+	justify-content: space-around;
+}
+.product__item{
+	border: 1px solid black;
+    width: 120px;
+    height: 150px;
+}
+
+.basket{
+	display: flex;
+	justify-content: space-around;
+}
