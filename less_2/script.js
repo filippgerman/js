@@ -25,6 +25,7 @@ let Basket = {
 	},
 	
 	addProduct(name, price){
+		this.sum += +price;
 		for (item of this.products){
 			if (name === item.name && price === item.price){
 				item.count++;
@@ -35,8 +36,8 @@ let Basket = {
 	},
 	
 	render(){
-		const basket = document.querySelector('.basket');
-		basket.innerHTML='';
+		const basket = document.querySelector('.basket__content');
+		basket.innerHTML = '';
 		
 		for (item of this.products){
 			const {name, price, count} = item;
@@ -57,7 +58,15 @@ let Basket = {
 			div.append(count_product);
 			basket.append(div);
 		};
+
+		const sum_div = document.querySelector('.basket__sum');
+		sum_div.innerHTML = '';
+		const sum = document.createElement('p');
+		sum.innerHTML = `your sum ${this.sum}`;
+		sum_div.append(sum);
 	},
+
+	sum: 0,
 };
 let obj = Basket;
 obj.init();

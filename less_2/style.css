@@ -8,7 +8,12 @@
     height: 150px;
 }
 
-.basket{
+.basket__content{
 	display: flex;
 	justify-content: space-around;
+}
+
+.basket__sum{
+	width: 150px;
+	height: 100px;
 }
