@@ -1,0 +1,20 @@
+.goods{
+	display: flex;
+	justify-content: space-around;
+	height: 500px;
+}
+.product-cart{
+	border: 1px solid black;
+    width: 120px;
+    height: 150px;
+}
+
+.basket__content{
+	display: flex;
+	justify-content: space-around;
+}
+
+.basket__sum{
+	width: 150px;
+	height: 100px;
+}
